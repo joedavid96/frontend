@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title  -->
+    <title>CapStore | Merchant Registration</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="../resources/img/core-img/favicon.ico">
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="../resources/css/core-style.css">
+    <link rel="stylesheet" href="../resources/style.css">
+
+</head>
+<body>
+    <!-- ##### Header Area Start ##### -->
+    <header class="header_area">
+        <div class="classy-nav-container breakpoint-off d-flex align-items-center justify-content-between">
+            <!-- Classy Menu -->
+            <nav class="classy-navbar" id="essenceNav">
+                <!-- Logo -->
+                <a class="nav-brand" href="index.html">CapStore</a>
+                <!-- Navbar Toggler -->
+                <div class="classy-navbar-toggler">
+                    <span class="navbarToggler"><span></span><span></span><span></span></span>
+                </div>
+                <!-- Menu -->
+               
+            </nav>
+
+            <!-- Header Meta Data -->
+            <div class="header-meta d-flex clearfix justify-content-end">
+                <!-- Search Area -->
+                <div class="search-area">
+                    <form action="#" method="post">
+                        <input type="search" name="search" id="headerSearch" placeholder="Type for search">
+                        <button type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    </form>
+                </div>
+                <!-- Favourite Area -->
+                <div class="favourite-area">
+                    <a class="active" href="#">Register</a>
+                </div>
+                <!-- User Login Info -->
+                <div class="user-login-info">
+                    <a href="#">Sign In</a>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+<div class="checkout_area section-padding-80">
+	    <div class="container">
+		<h3>Register</h3>
+		<div><br></div>
+            <div class="row">
+				<div class="col-md-6">
+			<form name="merch_register" class="form-horizontal" action="#" method="GET">
+              <div class="box-body">
+			  <div class="form-group">
+                  <label for="merchantName" class="col-sm-6 control-label">Name</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="merchantName" placeholder="Enter Your Name" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="merchantEmail" class="col-sm-6 control-label">Email ID</label>
+
+                  <div class="col-sm-10">
+                    <input type="email" class="form-control" name="merchantEmail" placeholder="Enter Your Email" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="mobileNo" class="col-sm-6 control-label">Mobile Number</label>
+
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="mobileNo" placeholder="Enter Your Mobile Number" required>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="password1" class="col-sm-6 control-label">Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="new-password" name="password1" placeholder="Enter Your Password" required>
+                  </div>
+                </div>
+				 <div class="form-group">
+                  <label for="password2" class="col-sm-6 control-label">Retype Password</label>
+                  <div class="col-sm-10">
+                    <input type="password" class="form-control" id="repeat-password" name="password2" placeholder="Enter Your Password" required>
+                  </div>
+                </div>
+				</div>
+				
+              </div>
+              <!-- /.box-body -->
+			<div class="col-md-6">
+			 <div class="box-body">
+			 <div class="form-group">
+                  <label for="addressLine1" class="col-sm-6 control-label">Address Line 1</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="addressLine1" placeholder="Enter Your Address" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="addressLine2" class="col-sm-6 control-label">Address Line 2</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="addressLine2" placeholder="Enter Your Address" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="city" class="col-sm-6 control-label">City</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="city" placeholder="Enter Your City" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="state" class="col-sm-6 control-label">State</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="state" placeholder="Enter Your State" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="country" class="col-sm-6 control-label">Country</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="country" placeholder="Enter Your Country" required>
+                  </div>
+                </div>
+				<div class="form-group">
+                  <label for="pincode" class="col-sm-6 control-label">Pin Code</label>
+                  <div class="col-sm-10">
+                    <input type="text" class="form-control" name="pincode" placeholder="Enter Your Pin Code" required>
+                  </div>
+                </div>
+			 </div>            
+			
+			</div>
+		   </div>
+		   <div class="row">
+		   <div class="col-md-3"></div>
+		   <div class="col-md-6">
+		    <div id="RegisterBtn" class="box-footer">
+                <button type="submit" onclick="return javascript:validate()" class="col-sm-10 btn essence-btn">Register</button>
+              </div>
+			  </form>
+			  </div>
+			  <div class="col-md-3"></div>
+              <!-- /.box-footer -->
+		   </div>
+		</div>    
+     </div>
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer_area clearfix">
+        <div class="container">
+            <div class="row">
+                <!-- Single Widget Area -->
+                <div class="col-12 col-md-6">
+                    <div class="single_widget_area d-flex mb-30">
+                        <!-- Logo -->
+                        <div class="footer-logo mr-50">
+                            <a href="#">CapStore</a>
+                        </div>
+                        <!-- Footer Menu -->
+                        <div class="footer_menu">
+                            <ul>
+                                <li><a href="shop.html">Category</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- Single Widget Area -->
+                <div class="col-12 col-md-6 text-center">
+                    <p>
+                       Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | CapStore</a>
+                    </p>
+                </div>
+            </div>
+
+           
+            
+           
+        </div>
+
+
+
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- jQuery (Necessary for All JavaScript Plugins) -->
+    <script src="../resources/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="../resources/js/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="../resources/js/bootstrap.min.js"></script>
+    <!-- Plugins js -->
+    <script src="../resources/js/plugins.js"></script>
+    <!-- Classy Nav js -->
+    <script src="../resources/js/classy-nav.min.js"></script>
+    <!-- Active js -->
+    <script src="../resources/js/active.js"></script>
+	<!-- Form Validation -->
+	<script>
+	$(document).ready(function(){alert("works")};);
+	</script>
+	
+	
+</body>
+
+</html>
